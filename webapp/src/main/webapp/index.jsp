@@ -1,2 +1,2 @@
 Hello, World!
-This is poll job.
+This is scm poll.
