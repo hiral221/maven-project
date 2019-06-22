@@ -1,3 +1,2 @@
 Hello, World!
-This is scm poll.
-this is web </hoookkkk>
+SCM pole 
