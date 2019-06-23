@@ -4,7 +4,7 @@ pipeline {
         stage ('init') {
             steps {
                 echo "This is Initializing Stage"
-                tools{
+                tools {
                     maven'maven3'
                     jdk 'java8'
                                     }
