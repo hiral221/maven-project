@@ -14,12 +14,11 @@ pipeline {
         stage ('Build') {
             steps {
                 echo "This is build stage"
-
+                sh label: '', script: 'clean package checkstyle:checkstyle'
             }
             post{
                 success{
                     echo "shell script maven"
-                    sh label: '', script: 'clean package checkstyle:checkstyle'
                     echo "Archive Effect"
                     archiveArtifacts '**/*.war'
                     echo "Junit Job details"
