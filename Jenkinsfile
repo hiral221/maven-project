@@ -29,6 +29,10 @@ pipeline {
         }
         stage ('Deploy') {
             steps {
+                timeout(time: 30, unit: 'SECONDS') {
+}
+         echo "this is build Process do you want to continue?"
+         build 'dev-deployment'
                 echo "This is deployment stage"
             }
         }
