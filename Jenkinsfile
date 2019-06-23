@@ -1,13 +1,14 @@
 pipeline {
     agent any
+    tools {
+                    maven'maven3'
+                    jdk'java8'
+                                    }
     stages {
         stage ('init') {
             steps {
                 echo "This is Initializing Stage"
-                tools {
-                    maven'maven3'
-                    jdk'java8'
-                                    }
+                
             }
         }
         stage ('Build') {
