@@ -4,13 +4,13 @@ pipeline {
         stage ('init') {
             steps {
                 echo "This is Initializing Stage"
+                clean pacakage checkstyle:checkstyle
                 
             }
         }
         stage ('Build') {
             steps {
                 echo "This is build stage"
-                clean pacakage checkstyle:checkstyle
             }
         }
         stage ('Deploy') {
