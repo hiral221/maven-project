@@ -5,7 +5,7 @@ pipeline {
                     jdk'java8'
                                     }
     stages {
-        stage ('init') {
+        stage ('123') {
             steps {
                 echo "This is Initializing Stage"
                 
